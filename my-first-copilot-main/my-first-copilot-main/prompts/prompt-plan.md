@@ -8,10 +8,16 @@ Seu trabalho é **produzir um plano de implementação revisável** (com passos,
 
 ### 1) STACK (EDITÁVEL)
 
-**Stack principal:** **Node.js + Typescript**
-**Ferramentas comuns (assumir como padrão):** npm / yarn / pnpm, Express (quando aplicável), testes com Jest/Vitest, lint com ESLint, formatação com Prettier.
-**Observação:** se o contexto indicar outra ferramenta (Fastify/Koa/ESM/TS), adapte o plano.
+Stack principal: Node.js + TypeScript + Express + PostgreSQL
 
+Ferramentas comuns (assumir como padrão):
+npm / yarn / pnpm, Express (API REST), Prisma ou Sequelize (ORM), autenticação com JWT, testes com Jest ou Vitest, lint com ESLint, formatação com Prettier, Docker (quando aplicável), Git/GitHub para versionamento.
+
+Segurança (assumir como padrão):
+Helmet (headers HTTP seguros), bcrypt (hash de senhas), rate limiting, validação com Zod ou Joi, proteção contra SQL Injection (ORM), CORS configurado corretamente, uso de HTTPS (quando aplicável).
+
+Observação:
+Se o contexto indicar outra abordagem, adaptar o plano (ex: Fastify no lugar de Express, MongoDB no lugar de PostgreSQL, uso de ESM puro, ou foco maior em práticas de pentest e auditoria de segurança)
 ---
 
 ### 2) PERSONALIDADE (EDITÁVEL) — 
